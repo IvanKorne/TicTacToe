@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const TicTacToe = () => {
   const defaultBoard = new Array(9).fill(""); // Default Starting 3x3 Board
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("Play Now!");
   const [isWin, setIsWin] = useState(false);
   const [isO, setIsO] = useState(false);
   const [board, setBoard] = useState<string[]>(defaultBoard);
